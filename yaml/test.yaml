@@ -1,0 +1,8 @@
+---
+- hosts: all
+  remote_user: java
+  tasks:
+      - name: test connection
+        ping:
+
+

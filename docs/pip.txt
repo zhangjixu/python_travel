@@ -1,0 +1,29 @@
+pip install bs4 -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+pip install requests -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+pip install xlwt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install pymongo -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install matplotlib==2.2.3 -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install numpy -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install scipy -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install pystan -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install mysql-connector -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install fabric3 -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install pytest -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+pip install apscheduler -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+pip install celery -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+pip install redis -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+pip install selenium -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
