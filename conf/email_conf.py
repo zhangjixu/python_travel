@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 # 设置服务器
-mail_host = 'smtp.mxhichina.com'
+mail_host = ''
 # 用户名
-mail_user = 'BDPlatform@daihoubang.com'
+mail_user = ''
 # 密码
-mail_pass = 'Info2017!'
+mail_pass = '!'
 # 发件人地址
-sender = 'BDPlatform@daihoubang.com'
+sender = ''
 # 收件人地址
-receiver = ['1062904651@qq.com']
+receiver = ['']
 
 

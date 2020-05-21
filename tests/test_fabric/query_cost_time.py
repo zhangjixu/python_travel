@@ -5,12 +5,11 @@ from fabric.api import *
 
 password = 'java'
 env.user = 'java'
-env.hosts = ['10.76.85.201', '10.76.85.202', '10.76.85.203', '10.76.85.204', '10.76.85.205']
+env.hosts = ['']
 # 输入密码的时候记得带上 端口号
-env.passwords = {'java@10.76.85.201:22': password, 'java@10.76.85.202:22': password, 'java@10.76.85.203:22': password,
-                 'java@10.76.85.204:22': password, 'java@10.76.85.205:22': password}
+env.passwords = {'java@': password}
 # 分组操作
-env.roledefs = {'java': ['10.76.85.201', '10.76.85.202', '10.76.85.203', '10.76.85.204', '10.76.85.205']}
+env.roledefs = {'java': ['']}
 
 
 @task

@@ -4,13 +4,13 @@ import fabric
 from fabric.api import *
 from fabric.contrib.console import confirm
 
-password = 'centosps2016'
-env.user = 'centos'
-env.hosts = ['192.168.20.151', '192.168.20.152']
+password = ''
+env.user = ''
+env.hosts = ['']
 # 输入密码的时候记得带上 端口号
-env.passwords = {'centos@192.168.20.151:22': password, 'centos@192.168.20.152:22': password}
+env.passwords = {'centos@': password}
 # 分组操作
-env.roledefs = {'download': ['192.168.20.152'], 'upload': ['192.168.20.151'], 'user': ['192.168.20.151']}
+env.roledefs = {'download': [''], 'upload': [''], 'user': ['']}
 
 
 @task
@@ -29,7 +29,7 @@ def test():
         # 下载文件到本地
         get('2018-11-19_countAPITime.log', '/Users/jixuzhang/Desktop/data')
         # 上传文件到远程
-        put('/Users/jixuzhang/Desktop/data/sql.log', '/home/centos/data')
+        put('', '/home/centos/data')
 
 
 @task
@@ -54,7 +54,7 @@ def test_su():
 @task
 @roles('user')
 def test_exception():
-    with cd('/home/centos/data'):
+    with cd(''):
         # warn_only=True 遇到错误，还会继续执行后面的语句
         with settings(warn_only=True):
             result = run('more data.txt | grep \"as\"')
@@ -69,7 +69,7 @@ def test_exception():
 @task
 @roles('user')
 def test_data():
-    with cd('/home/centos/data'):
+    with cd(''):
         # 使用 prompt 函数获取用户输入的字符串
         content = prompt('请输入字符串:')
         print fabric.colors.red(content, bold=False)

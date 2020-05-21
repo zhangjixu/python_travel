@@ -11,7 +11,7 @@ sys.setdefaultencoding('utf-8')
 
 
 def test_split():
-    with io.open("/Users/jixuzhang/Desktop/data/test/2.txt", "r") as file:
+    with io.open("", "r") as file:
         cabinet = "1-4B-L02"
         arr = []
         for data in file.readlines():

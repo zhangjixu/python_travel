@@ -10,7 +10,7 @@ import json
 
 
 def querySolr():
-    url = 'http://192.168.20.152:8080/syncDataToSolr/querySolr'
+    url = ''
     body = {"table": "others_rpt_contacts", "q": "_id:576b5bd818ca47052cdfefea", "start": "0", "rows": "1",
             "sort": "_id,rpt_ut", "unit": "desc", "fl": "", "cursorMark": "*"}
     headers = {'content-type': "application/json"}
@@ -26,7 +26,7 @@ def querySolr():
 
 
 def querySolr1():
-    url = 'http://192.168.20.152:8080/syncDataToSolr/querySolr'
+    url = ''
     body = {"table": "rpt_contacts", "q": "tk:d6976eb1015a4c4abbe90d4ab2bf34fb", "start": "0", "rows": "1",
             "sort": "_id,rpt_ut", "unit": "desc", "fl": "", "cursorMark": "*"}
     headers = {'content-type': "application/json"}

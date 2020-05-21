@@ -7,10 +7,10 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 from fabric.api import env, sudo, task, run
 
-env.user = 'psadmin'
-env.password = 'PS123abc,.'
+env.user = ''
+env.password = ''
 env.sudo_password = env.password
-env.hosts = ['10.76.1.3', '10.76.1.4']
+env.hosts = ['']
 env.port = 22
 
 
@@ -48,7 +48,7 @@ def default1():
     ip = run(""" ifconfig | grep -i 10.76. """)
     ip_str = ip.stdout
     real_ip = get_ip(ip_str)
-    path = "/Users/jixuzhang/Desktop/data/test/data/ip/" + real_ip + ".txt"
+    path = "" + real_ip + ".txt"
 
     core = "cpu core: " + run(""" cat /proc/cpuinfo| grep "processor"| wc -l """).stdout + "\n"
     mem = "memory: " + run(""" free -m | grep -i  Mem """).stdout + "\n"
@@ -78,5 +78,5 @@ def test():
 
 
 if __name__ == '__main__':
-    path = "/Users/jixuzhang/Desktop/data/test/data/ip/" + "test" + ".txt"
+    path = "" + "test" + ".txt"
     save_file(path, "ss")

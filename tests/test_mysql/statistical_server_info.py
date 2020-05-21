@@ -20,7 +20,7 @@ def get_avaliable_connection(cabinet, physical_sn, physical_ip):
     Returns:
 
     '''
-    available = {"psadmin": "PS123abc,.", "root": "123abc,.", "root_second": "ps123abc,."}
+    available = {"psadmin": "", "root": "", "root_second": ""}
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
